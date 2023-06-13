@@ -8,7 +8,7 @@ const bodyParse = require('body-parser')
 const port = 3000
 
 
-app.use(bodyParse.urlencoded({extended:true})); 
+app.use(bodyParse.urlencoded({extended:false})); 
 
 app.use('/',express.static(path.resolve(__dirname+"/static")))
 
